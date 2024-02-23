@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libreriaParadigmi.Models", "libreriaParadigmi.Models\libreriaParadigmi.Models.csproj", "{BC05B646-9B09-4F92-B890-86DBCC514F45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libreriaParadigmi.Models", "libreriaParadigmi.Models\libreriaParadigmi.Models.csproj", "{BC05B646-9B09-4F92-B890-86DBCC514F45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libreriaParadigmi.Test", "libreriaParadigmi.Test\libreriaParadigmi.Test.csproj", "{9FC142DD-65EF-46E0-8F6A-AA76BCECD323}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BC05B646-9B09-4F92-B890-86DBCC514F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC05B646-9B09-4F92-B890-86DBCC514F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC05B646-9B09-4F92-B890-86DBCC514F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FC142DD-65EF-46E0-8F6A-AA76BCECD323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FC142DD-65EF-46E0-8F6A-AA76BCECD323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FC142DD-65EF-46E0-8F6A-AA76BCECD323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FC142DD-65EF-46E0-8F6A-AA76BCECD323}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

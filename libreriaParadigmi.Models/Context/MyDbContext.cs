@@ -25,11 +25,10 @@ namespace libreriaParadigmi.Models.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            /*
+            //TODO: move connection string to appsettings.json
             optionsBuilder
-                .UseLazyLoadingProxies()
-                .UseSqlServer("Server=LAPTOP-URQH5S09;Database=master;User Id=paradigmi;Password=paradigmi;trusted_connection=true;");
-            */
+                .UseSqlServer("Server=LAPTOP-URQH5S09;Database=Libreria;User Id=admin;Password=admin;");
+            base.OnConfiguring(optionsBuilder);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
