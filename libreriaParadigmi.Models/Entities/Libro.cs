@@ -13,7 +13,7 @@ namespace libreriaParadigmi.Models.Entities
         public string autore { get; set; } = string.Empty;
         public string editore { get; set; } = string.Empty;
         public DateTime dataPubblicazione { get; set; }
-        public ICollection<Categoria> categorie { get; set; } = new HashSet<Categoria>();
+        public virtual ICollection<Categoria> categorie { get; set; } = new HashSet<Categoria>();
         
     }
 }

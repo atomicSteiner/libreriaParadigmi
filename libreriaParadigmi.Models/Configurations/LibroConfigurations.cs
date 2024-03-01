@@ -15,7 +15,13 @@ namespace libreriaParadigmi.Models.Configurations
         {
             builder.ToTable("Libro");
             builder.HasKey(p => p.id);
-            builder.HasMany(p => p.categorie).WithOne().HasForeignKey(p => p.id);  
+            builder.HasMany(p => p.categorie).WithMany(p=>p.libri)
+            .UsingEntity(
+            "CategoriaLibro",
+            l => l.HasOne(typeof(Categoria)).WithMany().HasForeignKey("categoriaid").HasPrincipalKey(nameof(Categoria.id)),
+            r => r.HasOne(typeof(Libro)).WithMany().HasForeignKey("libroid").HasPrincipalKey(nameof(Libro.id)),
+            j => j.HasKey("categoriaid", "libroid")); ;
+
         }
     }
 }

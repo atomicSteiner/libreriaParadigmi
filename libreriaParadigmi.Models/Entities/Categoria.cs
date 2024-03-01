@@ -10,5 +10,6 @@ namespace libreriaParadigmi.Models.Entities
     {
         public int id { get; set; }
         public String nome { get; set; }
+        public virtual IEnumerable<Libro> libri { get; set; } = new HashSet<Libro>();   //proprietà di navigazione necessaria per EF, non mappata nel db
     }
 }

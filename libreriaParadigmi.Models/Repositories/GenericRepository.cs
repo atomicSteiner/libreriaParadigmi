@@ -16,7 +16,7 @@ namespace libreriaParadigmi.Models.Repositories
             _ctx = ctx;
         }
 
-        public T Get(object id)
+        public virtual T Get(object id)
         {
             return _ctx.Set<T>().Find(id);
         }
