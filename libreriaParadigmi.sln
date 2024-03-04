@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libreriaParadigmi.Models", "libreriaParadigmi.Models\libreriaParadigmi.Models.csproj", "{BC05B646-9B09-4F92-B890-86DBCC514F45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libreriaParadigmi.Test", "libreriaParadigmi.Test\libreriaParadigmi.Test.csproj", "{9FC142DD-65EF-46E0-8F6A-AA76BCECD323}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libreriaParadigmi.Test", "libreriaParadigmi.Test\libreriaParadigmi.Test.csproj", "{9FC142DD-65EF-46E0-8F6A-AA76BCECD323}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libreriaParadigmi.Application", "libreriaParadigmi.Application\libreriaParadigmi.Application.csproj", "{80FC3B68-82F9-448F-B018-DB40B019FE04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9FC142DD-65EF-46E0-8F6A-AA76BCECD323}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FC142DD-65EF-46E0-8F6A-AA76BCECD323}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FC142DD-65EF-46E0-8F6A-AA76BCECD323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80FC3B68-82F9-448F-B018-DB40B019FE04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80FC3B68-82F9-448F-B018-DB40B019FE04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80FC3B68-82F9-448F-B018-DB40B019FE04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80FC3B68-82F9-448F-B018-DB40B019FE04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

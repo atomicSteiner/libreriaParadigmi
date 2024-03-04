@@ -21,7 +21,7 @@ namespace libreriaParadigmi.Models.Repositories
             return _ctx.Set<T>().Find(id);
         }
 
-        public void Add(T entity)
+        public virtual void Add(T entity)
         {
             _ctx.Set<T>().Add(entity);
         }

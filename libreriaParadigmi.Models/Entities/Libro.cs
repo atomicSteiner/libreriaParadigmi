@@ -14,6 +14,16 @@ namespace libreriaParadigmi.Models.Entities
         public string editore { get; set; } = string.Empty;
         public DateTime dataPubblicazione { get; set; }
         public virtual ICollection<Categoria> categorie { get; set; } = new HashSet<Categoria>();
-        
+        public Libro(string nome, string autore, string editore, DateTime data, HashSet<Categoria> categorie)
+        {
+            this.nome = nome;
+            this.autore = autore;
+            this.editore = editore;
+            this.dataPubblicazione = data;
+            this.categorie = categorie;
+        }
+        public Libro()
+        {
+        }
     }
 }
