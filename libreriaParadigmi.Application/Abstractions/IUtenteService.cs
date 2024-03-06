@@ -10,5 +10,7 @@ namespace libreriaParadigmi.Application.Abstractions
     public interface IUtenteService
     {
         Utente GetUtente(string id);
+        public string Login(string mail, string password);
+        public bool Register(string nome, string cognome, string password, string mail);
     }
 }

@@ -13,6 +13,6 @@ namespace libreriaParadigmi.Application.Abstractions
         public void AddLibro(string nome, string autore, string editore, DateTime data, HashSet<Categoria> categorie);
         public bool RemoveLibro(int id);
         public bool UpdateLibro(int id, string nome, string autore, string editore, DateTime data, HashSet<Categoria> categorie);
-        public IEnumerable<Libro> GetLibri(string categoria, string nome, string autore, DateOnly dataPubblicazione);
+        public IEnumerable<Libro> GetLibri(string? categoria, string? nome, string? autore, DateTime? dataPubblicazione, int from, int num, out int totalnum);
     }
 }

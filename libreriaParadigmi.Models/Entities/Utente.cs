@@ -12,5 +12,15 @@ namespace libreriaParadigmi.Models.Entities
         public string cognome { get; set; } = string.Empty;
         public string email { get; set; } = string.Empty;
         public string password { get; set; } = string.Empty;
+        public Utente(string nome, string cognome, string email, string password)
+        {
+            this.nome = nome;
+            this.cognome = cognome;
+            this.email = email;
+            this.password = password;
+        }
+        public Utente()
+        {
+        }
     }
 }

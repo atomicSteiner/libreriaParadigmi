@@ -24,10 +24,9 @@ namespace libreriaParadigmi.Application.Services
             _libroRepository.Save();
         }
 
-        public IEnumerable<Libro> GetLibri(string categoria, string nome, string autore, DateOnly dataPubblicazione)
+        public IEnumerable<Libro> GetLibri(string? categoria, string? nome, string? autore, DateTime? dataPubblicazione, int from, int num, out int totalnum)
         {
-            //TODO : ricordarsi di fare la paginazione!!!
-            throw new NotImplementedException();
+            return _libroRepository.GetLibri(categoria, nome, autore, dataPubblicazione, from, num, out totalnum);
         }
 
         public bool RemoveLibro(int id)

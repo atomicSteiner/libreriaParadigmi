@@ -1,5 +1,6 @@
 ﻿using libreriaParadigmi.Models.Context;
 using libreriaParadigmi.Models.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace libreriaParadigmi.Models.Repositories
         }
         public Categoria GetByNome(string nome)
         {
-            return _ctx.Set<Categoria>().Where(x => x.nome == nome).FirstOrDefault();
+            return _ctx.Set<Categoria>().Include(c => c.libri).Where(x => x.nome.Equals( nome)).FirstOrDefault();
         }
     }
     

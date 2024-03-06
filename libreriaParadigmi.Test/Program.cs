@@ -5,4 +5,6 @@ Console.WriteLine("Hello, World!");
 dbExample dbExample = new dbExample();
 //dbExample.run();
 serviceExample serviceExample = new serviceExample();
-serviceExample.run();
+//serviceExample.run();
+//serviceExample.runUtente();
+serviceExample.runRicerca();

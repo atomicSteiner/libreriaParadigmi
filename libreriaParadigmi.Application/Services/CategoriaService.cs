@@ -32,7 +32,7 @@ namespace libreriaParadigmi.Application.Services
         public bool RemoveCategoria(string nome)
         {
             Categoria categoria = _categoriaRepository.GetByNome(nome);
-            if(categoria != null)
+            if(categoria != null&& !categoria.libri.Any())          //controlla che non ci siano libri associati alla categoria e che la categoria esista
             {
                 _categoriaRepository.Delete(categoria);
                 _categoriaRepository.Save();
