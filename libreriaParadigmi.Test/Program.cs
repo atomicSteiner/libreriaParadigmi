@@ -6,5 +6,5 @@ dbExample dbExample = new dbExample();
 //dbExample.run();
 serviceExample serviceExample = new serviceExample();
 //serviceExample.run();
-//serviceExample.runUtente();
-serviceExample.runRicerca();
+serviceExample.runUtente();
+//serviceExample.runRicerca();
