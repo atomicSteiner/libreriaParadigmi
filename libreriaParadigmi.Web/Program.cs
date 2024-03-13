@@ -10,6 +10,9 @@ using System.Text;
 using libreriaParadigmi.Application.Services;
 using libreriaParadigmi.Models.Repositories;
 using libreriaParadigmi.Web.Results;
+using FluentValidation;
+using Microsoft.AspNetCore.Mvc;
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -85,6 +88,13 @@ builder.Services.AddAuthentication(options =>
                        IssuerSigningKey = securityKey
                    };
                });
+
+builder.Services.AddValidatorsFromAssembly(
+    AppDomain.CurrentDomain.GetAssemblies().
+           SingleOrDefault(assembly => assembly.GetName().Name == "libreriaParadigmi.Application")
+    );
+builder.Services.AddFluentValidationAutoValidation();
+
 //adding services
 builder.Services.AddScoped<CategoriaRepository>();
 builder.Services.AddScoped<LibroRepository>();
