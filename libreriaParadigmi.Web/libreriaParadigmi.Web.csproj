@@ -12,10 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\libreriaParadigmi.Application\libreriaParadigmi.Application.csproj" />
     <ProjectReference Include="..\libreriaParadigmi.Models\libreriaParadigmi.Models.csproj" />
   </ItemGroup>
