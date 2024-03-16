@@ -41,7 +41,7 @@ namespace libreriaParadigmi.Models.Repositories
                 query = query.Where(x => x.dataPubblicazione.Date.Equals(dataPubblicazione.Value.Date));
             }
             totalnum = query.Count();
-            return query.Skip(from).Take(num).ToList();
+            return query.Skip(from*num).Take(num).ToList();
         }
     }
     

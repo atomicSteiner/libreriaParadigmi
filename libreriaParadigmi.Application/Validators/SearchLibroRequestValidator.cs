@@ -18,6 +18,13 @@ namespace libreriaParadigmi.Application.Validators
            RuleFor(x => x.from)
                 .GreaterThanOrEqualTo(0)
                 .WithMessage("Il campo from deve essere superiore o uguale a 0");
+           RuleFor(x => x)
+                .Must(x => almenoUnaNonNulla(x))
+                .WithMessage("Almeno un campo deve essere non nullo");
+        }
+        private bool almenoUnaNonNulla(SearchLibroRequest request)
+        {
+            return !String.IsNullOrEmpty(request.categoria) || !String.IsNullOrEmpty(request.nome) || !String.IsNullOrEmpty(request.autore) || request.data != null;
         }
     }
 }

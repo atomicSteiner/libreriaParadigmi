@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("libreriaParadigmi.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f468b1b511d0468468d06f1fd5aaf5ac71f02237")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d6cfcf40d15411e7135f86dc03f3fc64ab25efc")]
 [assembly: System.Reflection.AssemblyProductAttribute("libreriaParadigmi.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("libreriaParadigmi.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
